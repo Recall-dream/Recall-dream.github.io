@@ -1,0 +1,357 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>我的博客 | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="JavaScript高级JS基础复习数据类型简单数据类型
+string
+number
+boolean
+undefined复杂数据类型
+Array
+Date
+Math
+RegExp
+Number
+String
+Boolean
+Object
+function
+null (变量的值永远不可能自动为null">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Hexo" title="Hexo"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hexo">Hexo</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/12/30/我的博客/" title="我的博客" itemprop="url">我的博客</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="John Doe">John Doe</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-12-30T05:57:31.000Z" itemprop="datePublished">2016-12-30</time>
+    Updated:<time datetime="2016-12-30T06:20:53.658Z" itemprop="dateModified">2016-12-30</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript高级"><span class="toc-number">1.</span> <span class="toc-text">JavaScript高级</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS基础复习"><span class="toc-number">1.1.</span> <span class="toc-text">JS基础复习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-number">1.1.1.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简单数据类型"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">简单数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#复杂数据类型"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">复杂数据类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取类型的关键字"><span class="toc-number">1.1.2.</span> <span class="toc-text">获取类型的关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#值类型和引用类型"><span class="toc-number">1.1.3.</span> <span class="toc-text">值类型和引用类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#值类型"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">值类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引用类型"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">引用类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#值类型和引用类型的赋值特征"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">值类型和引用类型的赋值特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#值类型和引用类型做函数的参数"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">值类型和引用类型做函数的参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的动态特性"><span class="toc-number">1.1.4.</span> <span class="toc-text">对象的动态特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#访问对象成员的方式"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">访问对象成员的方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关键字"><span class="toc-number">1.1.5.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑中断"><span class="toc-number">1.1.6.</span> <span class="toc-text">逻辑中断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#break-continue"><span class="toc-number">1.1.7.</span> <span class="toc-text">break continue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异常处理语句"><span class="toc-number">1.1.8.</span> <span class="toc-text">异常处理语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#如何手动抛出异常"><span class="toc-number">1.1.8.1.</span> <span class="toc-text">如何手动抛出异常</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象的基本介绍"><span class="toc-number">1.2.</span> <span class="toc-text">面向对象的基本介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象是什么"><span class="toc-number">1.2.1.</span> <span class="toc-text">面向对象是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向过程是什么"><span class="toc-number">1.2.2.</span> <span class="toc-text">面向过程是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象和面向过程的关系"><span class="toc-number">1.2.3.</span> <span class="toc-text">面向对象和面向过程的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象三大特性"><span class="toc-number">1.2.4.</span> <span class="toc-text">面向对象三大特性</span></a></li></ol></li></ol></li></ol>
+		</div>
+		
+		<h1 id="JavaScript高级"><a href="#JavaScript高级" class="headerlink" title="JavaScript高级"></a>JavaScript高级</h1><h2 id="JS基础复习"><a href="#JS基础复习" class="headerlink" title="JS基础复习"></a>JS基础复习</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="简单数据类型"><a href="#简单数据类型" class="headerlink" title="简单数据类型"></a>简单数据类型</h4><ul>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>undefined<h4 id="复杂数据类型"><a href="#复杂数据类型" class="headerlink" title="复杂数据类型"></a>复杂数据类型</h4></li>
+<li>Array</li>
+<li>Date</li>
+<li>Math</li>
+<li>RegExp</li>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Object</li>
+<li>function</li>
+<li>null (变量的值永远不可能自动为null，除非手动进行设置)</li>
+</ul>
+<p>什么时候要将一个变量设置为null?<br>自己在写方法给别人提供对象的时候，如果返回的对象不存在，或者内部出现一些异常，那么这个返回值应该被设置为null</p>
+<h3 id="获取类型的关键字"><a href="#获取类型的关键字" class="headerlink" title="获取类型的关键字"></a>获取类型的关键字</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typeof</span> 数据</div><div class="line"><span class="comment">//返回值为字符串类型的</span></div><div class="line"><span class="comment">//功能，获取数据的数据类型   如果是复杂类型的数据，都返回object，除了函数、方法</span></div><div class="line"></div><div class="line"><span class="comment">//函数和方法的返回值为    function</span></div></pre></td></tr></table></figure>
+<h3 id="值类型和引用类型"><a href="#值类型和引用类型" class="headerlink" title="值类型和引用类型"></a>值类型和引用类型</h3><h4 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h4><pre><code>存储的是数据本身的数据就是值类型的数据
+</code></pre><h4 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h4><pre><code>存储的是数据的地址的数据就是应用类型的数据
+</code></pre><h4 id="值类型和引用类型的赋值特征"><a href="#值类型和引用类型的赋值特征" class="headerlink" title="值类型和引用类型的赋值特征"></a>值类型和引用类型的赋值特征</h4><ul>
+<li>值类型赋值：直接将数据复制一份交给新的变量，两个变量完全独立，互不影响</li>
+<li>引用类型赋值：将数据的地址复制一份交给新的变量，两个变量同时指向同一个对象，修改其中一个，会影响另外一个</li>
+</ul>
+<h4 id="值类型和引用类型做函数的参数"><a href="#值类型和引用类型做函数的参数" class="headerlink" title="值类型和引用类型做函数的参数"></a>值类型和引用类型做函数的参数</h4><ol>
+<li>在函数调用的时候，会隐式的将实参赋值给形参</li>
+<li>使用赋值特征去判断就可以分析清楚了</li>
+</ol>
+<h3 id="对象的动态特性"><a href="#对象的动态特性" class="headerlink" title="对象的动态特性"></a>对象的动态特性</h3><p>在对象创建之后，可以随时的为对象新增成员，这个特性就是对象的动态特性</p>
+<h4 id="访问对象成员的方式"><a href="#访问对象成员的方式" class="headerlink" title="访问对象成员的方式"></a>访问对象成员的方式</h4><ul>
+<li>点语法   <code>对象名.属性名</code></li>
+<li>关联数组语法   <code>对象名[&quot;属性名&quot;]</code></li>
+</ul>
+<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><ul>
+<li>in<ul>
+<li>for-in 遍历对象的属性</li>
+<li>判断对象中是否存在某个属性  <code>属性名 in 对象名</code></li>
+</ul>
+</li>
+<li>delete<ul>
+<li>删除未使用var声明的变量</li>
+<li>删除对象的属性</li>
+</ul>
+</li>
+<li>new<br>使用构造函数创建对象，需要使用new关键字</li>
+</ul>
+<h3 id="逻辑中断"><a href="#逻辑中断" class="headerlink" title="逻辑中断"></a>逻辑中断</h3><ul>
+<li>表达式1 || 表达式2   表达式1为真，返回表达式1 否则返回表达式2</li>
+<li>表达式1 &amp;&amp; 表达式2   表达式1为假，返回表达式1，否则返回表达式2</li>
+</ul>
+<h3 id="break-continue"><a href="#break-continue" class="headerlink" title="break continue"></a>break continue</h3><ul>
+<li>break 跳出整个循环，继续执行循环下面的语句</li>
+<li>continue 跳出本次循环，继续下次循环</li>
+</ul>
+<h3 id="异常处理语句"><a href="#异常处理语句" class="headerlink" title="异常处理语句"></a>异常处理语句</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>&#123;</div><div class="line">    <span class="comment">//可能出现异常的代码</span></div><div class="line">&#125;<span class="keyword">catch</span>(e)&#123;</div><div class="line">    <span class="comment">//e就是异常对象（异常信息）</span></div><div class="line">    <span class="comment">//出现异常后的处理代码（只有出现异常的时候，才会执行）</span></div><div class="line">&#125;<span class="keyword">finally</span>&#123;</div><div class="line">    <span class="comment">//释放资源的代码（js中一般不使用）</span></div><div class="line">    <span class="comment">//无论是否发生异常，都会执行的代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="如何手动抛出异常"><a href="#如何手动抛出异常" class="headerlink" title="如何手动抛出异常"></a>如何手动抛出异常</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">throw</span> anything;</div></pre></td></tr></table></figure>
+<p>throw关键字可以手动抛出异常，抛出的异常信息可以是任何东西，对象，值类型的数据。。。<br>是用catch可以捕获throw抛出的东西</p>
+<h2 id="面向对象的基本介绍"><a href="#面向对象的基本介绍" class="headerlink" title="面向对象的基本介绍"></a>面向对象的基本介绍</h2><h3 id="面向对象是什么"><a href="#面向对象是什么" class="headerlink" title="面向对象是什么"></a>面向对象是什么</h3><p>面向对象是一种思维方式, 将解决问题的关注点放在解决问题所需要的一系列对象上</p>
+<h3 id="面向过程是什么"><a href="#面向过程是什么" class="headerlink" title="面向过程是什么"></a>面向过程是什么</h3><p>棉线过程是一种思维方式, 将解决问题的关注点放在解决问题的每一个详细步骤上</p>
+<h3 id="面向对象和面向过程的关系"><a href="#面向对象和面向过程的关系" class="headerlink" title="面向对象和面向过程的关系"></a>面向对象和面向过程的关系</h3><p>面向对象是对面向过程的封装</p>
+<h3 id="面向对象三大特性"><a href="#面向对象三大特性" class="headerlink" title="面向对象三大特性"></a>面向对象三大特性</h3><ul>
+<li>封装</li>
+<li>继承</li>
+<li>多态</li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2016/12/30/我的博客/" data-title="我的博客 | Hexo" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/12/30/hello-world/"  title="Hello World">
+ <strong>NEXT:</strong><br/> 
+ <span>Hello World
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript高级"><span class="toc-number">1.</span> <span class="toc-text">JavaScript高级</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS基础复习"><span class="toc-number">1.1.</span> <span class="toc-text">JS基础复习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-number">1.1.1.</span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简单数据类型"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">简单数据类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#复杂数据类型"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">复杂数据类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取类型的关键字"><span class="toc-number">1.1.2.</span> <span class="toc-text">获取类型的关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#值类型和引用类型"><span class="toc-number">1.1.3.</span> <span class="toc-text">值类型和引用类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#值类型"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">值类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引用类型"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">引用类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#值类型和引用类型的赋值特征"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">值类型和引用类型的赋值特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#值类型和引用类型做函数的参数"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">值类型和引用类型做函数的参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的动态特性"><span class="toc-number">1.1.4.</span> <span class="toc-text">对象的动态特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#访问对象成员的方式"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">访问对象成员的方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关键字"><span class="toc-number">1.1.5.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑中断"><span class="toc-number">1.1.6.</span> <span class="toc-text">逻辑中断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#break-continue"><span class="toc-number">1.1.7.</span> <span class="toc-text">break continue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#异常处理语句"><span class="toc-number">1.1.8.</span> <span class="toc-text">异常处理语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#如何手动抛出异常"><span class="toc-number">1.1.8.1.</span> <span class="toc-text">如何手动抛出异常</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象的基本介绍"><span class="toc-number">1.2.</span> <span class="toc-text">面向对象的基本介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象是什么"><span class="toc-number">1.2.1.</span> <span class="toc-text">面向对象是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向过程是什么"><span class="toc-number">1.2.2.</span> <span class="toc-text">面向过程是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象和面向过程的关系"><span class="toc-number">1.2.3.</span> <span class="toc-text">面向对象和面向过程的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象三大特性"><span class="toc-number">1.2.4.</span> <span class="toc-text">面向对象三大特性</span></a></li></ol></li></ol></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		
+		<a href="http://yoursite.com" target="_blank" title="John Doe">John Doe</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+
+
+
+  </body>
+</html>
